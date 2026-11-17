@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Catcher Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>⭐ Star Catcher</h1>
+    <p class="subtitle">Catch stars. Reach 15 points. Have fun!</p>
+
+    <div class="stats">
+      <div>Score: <span id="score">0</span>/15</div>
+      <div>Lives: <span id="lives">❤️ ❤️ ❤️</span></div>
+    </div>
+
+    <div id="game-area">
+      <div id="message" class="message">
+        <h2>Ready to Play?</h2>
+        <p>Catch 15 stars without losing all 3 lives!</p>
+        <button id="start-btn">Start Game</button>
+      </div>
+
+      <div id="basket" aria-label="Player basket">🧺</div>
+    </div>
+
+    <div class="controls">
+      <button id="left-btn" aria-label="Move left">⬅ Left</button>
+      <button id="right-btn" aria-label="Move right">Right ➡</button>
+    </div>
+
+    <p class="instructions">
+      Keyboard: ← → or A / D<br>
+      Catch stars to score points!
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
